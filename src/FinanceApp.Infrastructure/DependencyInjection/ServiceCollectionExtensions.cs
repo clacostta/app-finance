@@ -36,6 +36,10 @@ public static class ServiceCollectionExtensions
             {
                 options.UseSqlServer(connectionString);
             }
+            else if (provider.Equals("Sqlite", StringComparison.OrdinalIgnoreCase))
+            {
+                options.UseSqlite(connectionString);
+            }
             else
             {
                 options.UseNpgsql(connectionString);

@@ -10,6 +10,25 @@ dotnet ef migrations add InitialCreate -p src/FinanceApp.Infrastructure -s src/F
 
 ## Aplicar no banco
 
+### PostgreSQL / SQL Server
+
+```bash
+dotnet ef database update -p src/FinanceApp.Infrastructure -s src/FinanceApp.Web
+```
+
+### SQLite
+
+Configure no `appsettings.json`:
+
+```json
+"DatabaseProvider": "Sqlite",
+"ConnectionStrings": {
+  "DefaultConnection": "Data Source=financeapp.db"
+}
+```
+
+Depois execute o mesmo comando de update:
+
 ```bash
 dotnet ef database update -p src/FinanceApp.Infrastructure -s src/FinanceApp.Web
 ```

@@ -1,6 +1,6 @@
 # FinanceApp
 
-Sistema web de controle financeiro pessoal/familiar com arquitetura em camadas (Clean Architecture), ASP.NET Core, EF Core, PostgreSQL/SQL Server e frontend MVC + jQuery.
+Sistema web de controle financeiro pessoal/familiar com arquitetura em camadas (Clean Architecture), ASP.NET Core, EF Core, PostgreSQL/SQL Server/SQLite e frontend MVC + jQuery.
 
 ## Fases entregues
 
@@ -62,7 +62,7 @@ tests/
 ## Decisões técnicas
 
 - **Identity** para autenticação segura e gestão de credenciais.
-- **EF Core** com provider configurável (`DatabaseProvider`: `PostgreSql` ou `SqlServer`).
+- **EF Core** com provider configurável (`DatabaseProvider`: `PostgreSql`, `SqlServer` ou `Sqlite`).
 - **Cookie seguro** com `HttpOnly`, `SecurePolicy=Always`, antiforgery nas ações de formulário.
 - **Importação OFX** com preview e validações de tipo/tamanho.
 - **Idempotência** via SHA-256 do arquivo e controle por lote de importação.
@@ -72,7 +72,24 @@ tests/
 ### Pré-requisitos
 
 - .NET SDK 8+
-- PostgreSQL 14+ (ou SQL Server 2019+)
+- PostgreSQL 14+ (ou SQL Server 2019+ ou SQLite)
+
+### Configuração de banco (provider)
+
+Defina no `src/FinanceApp.Web/appsettings.json`:
+
+- `"DatabaseProvider": "PostgreSql"` para PostgreSQL
+- `"DatabaseProvider": "SqlServer"` para SQL Server
+- `"DatabaseProvider": "Sqlite"` para SQLite
+
+Exemplo SQLite:
+
+```json
+"DatabaseProvider": "Sqlite",
+"ConnectionStrings": {
+  "DefaultConnection": "Data Source=financeapp.db"
+}
+```
 
 ### Passos
 
