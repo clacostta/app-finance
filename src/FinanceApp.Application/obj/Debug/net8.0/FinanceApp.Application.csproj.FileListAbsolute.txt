@@ -1,0 +1,16 @@
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\bin\Debug\net8.0\FinanceApp.Application.deps.json
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\bin\Debug\net8.0\FinanceApp.Application.dll
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\bin\Debug\net8.0\FinanceApp.Application.pdb
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\bin\Debug\net8.0\FinanceApp.Domain.dll
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\bin\Debug\net8.0\FinanceApp.Domain.pdb
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.csproj.AssemblyReference.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.AssemblyInfoInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.AssemblyInfo.cs
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.sourcelink.json
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceA.A82E5256.Up2Date
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.dll
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\refint\FinanceApp.Application.dll
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\FinanceApp.Application.pdb
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Application\obj\Debug\net8.0\ref\FinanceApp.Application.dll
