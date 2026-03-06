@@ -1,0 +1,819 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = AspnetCoreFull
+build_property.RootNamespace = AspnetCoreFull
+build_property.ProjectDir = C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Web\template\Razor Pages\AspnetCoreFull\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Web\template\Razor Pages\AspnetCoreFull
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Academy/CourseDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xBY2FkZW15XENvdXJzZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Academy/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xBY2FkZW15XERhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Academy/MyCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xBY2FkZW15XE15Q291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Access/Permission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xBY2Nlc3NcUGVybWlzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Access/Roles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xBY2Nlc3NcUm9sZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Calendar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xDYWxlbmRhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Chat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xDaGF0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Customer/CustomerAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcQ3VzdG9tZXJcQ3VzdG9tZXJBbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Customer/CustomerDetails/CustomerBilling.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcQ3VzdG9tZXJcQ3VzdG9tZXJEZXRhaWxzXEN1c3RvbWVyQmlsbGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Customer/CustomerDetails/CustomerNotifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcQ3VzdG9tZXJcQ3VzdG9tZXJEZXRhaWxzXEN1c3RvbWVyTm90aWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Customer/CustomerDetails/CustomerOverview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcQ3VzdG9tZXJcQ3VzdG9tZXJEZXRhaWxzXEN1c3RvbWVyT3ZlcnZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Customer/CustomerDetails/CustomerSecurity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcQ3VzdG9tZXJcQ3VzdG9tZXJEZXRhaWxzXEN1c3RvbWVyU2VjdXJpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Order/OrderDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcT3JkZXJcT3JkZXJEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Order/OrderList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcT3JkZXJcT3JkZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Products/CategoryList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcUHJvZHVjdHNcQ2F0ZWdvcnlMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Products/ProductAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcUHJvZHVjdHNcUHJvZHVjdEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Products/ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcUHJvZHVjdHNcUHJvZHVjdExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Referrals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcUmVmZXJyYWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Reviews.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcUmV2aWV3cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Settings/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcU2V0dGluZ3NcQ2hlY2tvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Settings/Locations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcU2V0dGluZ3NcTG9jYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Settings/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcU2V0dGluZ3NcTm90aWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Settings/Payments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcU2V0dGluZ3NcUGF5bWVudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Settings/Shipping.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcU2V0dGluZ3NcU2hpcHBpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Ecommerce/Settings/StoreDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFY29tbWVyY2VcU2V0dGluZ3NcU3RvcmVEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Email.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Invoice/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xJbnZvaWNlXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Invoice/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xJbnZvaWNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Invoice/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xJbnZvaWNlXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Invoice/Preview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xJbnZvaWNlXFByZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Invoice/Print.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xJbnZvaWNlXFByaW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Kanban.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xLYW5iYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Logistics/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xMb2dpc3RpY3NcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Logistics/Fleet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xMb2dpc3RpY3NcRmxlZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Users/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xVc2Vyc1xMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Users/View/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xVc2Vyc1xWaWV3XEFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Users/View/Billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xVc2Vyc1xWaWV3XEJpbGxpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Users/View/Connections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xVc2Vyc1xWaWV3XENvbm5lY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Users/View/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xVc2Vyc1xWaWV3XE5vdGlmaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Apps/Users/View/Security.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwc1xVc2Vyc1xWaWV3XFNlY3VyaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/ForgotPassword/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxGb3Jnb3RQYXNzd29yZFxCYXNpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/ForgotPassword/Cover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxGb3Jnb3RQYXNzd29yZFxDb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/Login/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpblxCYXNpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/Login/Cover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpblxDb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/Register/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3RlclxCYXNpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/Register/Cover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3RlclxDb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/Register/MultiSteps.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3RlclxNdWx0aVN0ZXBzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/ResetPassword/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZXNldFBhc3N3b3JkXEJhc2ljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/ResetPassword/Cover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZXNldFBhc3N3b3JkXENvdmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/TwoSteps/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxUd29TdGVwc1xCYXNpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/TwoSteps/Cover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxUd29TdGVwc1xDb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/VerifyEmail/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxWZXJpZnlFbWFpbFxCYXNpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Auth/VerifyEmail/Cover.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxWZXJpZnlFbWFpbFxDb3Zlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Cards/Actions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZHNcQWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Cards/Advance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZHNcQWR2YW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Cards/Analytics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZHNcQW5hbHl0aWNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Cards/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZHNcQmFzaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Cards/Statistics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZHNcU3RhdGlzdGljcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Charts/Apex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcnRzXEFwZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Charts/Chartjs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhcnRzXENoYXJ0anMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/CRUD/partials/_CreatUserOffcanvasPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ1JVRFxwYXJ0aWFsc1xfQ3JlYXRVc2VyT2ZmY2FudmFzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/CRUD/partials/_EditUserOffcanvasPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ1JVRFxwYXJ0aWFsc1xfRWRpdFVzZXJPZmZjYW52YXNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/CRUD/UserCRUD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ1JVRFxVc2VyQ1JVRC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Dashboards/Analytics.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkc1xBbmFseXRpY3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Dashboards/CRM.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkc1xDUk0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/Avatar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxBdmF0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/BlockUi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxCbG9ja1VpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/DragDrop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxEcmFnRHJvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/MediaPlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxNZWRpYVBsYXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/Misc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxNaXNjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/PerfectScrollbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxQZXJmZWN0U2Nyb2xsYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/StarRatings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxTdGFyUmF0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/SweetAlert2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxTd2VldEFsZXJ0Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/TextDivider.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxUZXh0RGl2aWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/Timeline/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxUaW1lbGluZVxCYXNpYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/Timeline/FullScreen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxUaW1lbGluZVxGdWxsU2NyZWVuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/Tour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxUb3VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/ExtendedUi/Treeview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXh0ZW5kZWRVaVxUcmVldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FormLayouts/Horizontal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybUxheW91dHNcSG9yaXpvbnRhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FormLayouts/Sticky.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybUxheW91dHNcU3RpY2t5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FormLayouts/Vertical.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybUxheW91dHNcVmVydGljYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/BasicInputs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcQmFzaWNJbnB1dHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/CustomOptions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcQ3VzdG9tT3B0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/Editors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRWRpdG9ycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/Extras.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRXh0cmFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/FileUpload.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRmlsZVVwbG9hZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/InputGroups.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcSW5wdXRHcm91cHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/Pickers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcUGlja2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/Selects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcU2VsZWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/Sliders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcU2xpZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Forms/Switches.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcU3dpdGNoZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FormValidation/Validation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVZhbGlkYXRpb25cVmFsaWRhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FormWizard/Icons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVdpemFyZFxJY29ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FormWizard/Numbered.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybVdpemFyZFxOdW1iZXJlZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FrontPages/CheckoutPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJvbnRQYWdlc1xDaGVja291dFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FrontPages/HelpCenterArticle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJvbnRQYWdlc1xIZWxwQ2VudGVyQXJ0aWNsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FrontPages/HelpCenterLanding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJvbnRQYWdlc1xIZWxwQ2VudGVyTGFuZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FrontPages/LandingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJvbnRQYWdlc1xMYW5kaW5nUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FrontPages/PaymentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJvbnRQYWdlc1xQYXltZW50UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/FrontPages/PricingPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJvbnRQYWdlc1xQcmljaW5nUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Icons/FontAwesome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWNvbnNcRm9udEF3ZXNvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Icons/Tabler.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSWNvbnNcVGFibGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/Blank.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcQmxhbmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/CollapsedMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcQ29sbGFwc2VkTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/Container.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcQ29udGFpbmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/ContentNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcQ29udGVudE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/ContentNavbarWithSidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcQ29udGVudE5hdmJhcldpdGhTaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/Fluid.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcRmx1aWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/HorizontalMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcSG9yaXpvbnRhbE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/WithoutMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcV2l0aG91dE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/LayoutExamples/WithoutNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0RXhhbXBsZXNcV2l0aG91dE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/Footer/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xGb290ZXJcX0Zvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/Footer/_FooterFront.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xGb290ZXJcX0Zvb3RlckZyb250LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/Menu/_HorizontalMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xNZW51XF9Ib3Jpem9udGFsTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/Menu/_VerticalMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xNZW51XF9WZXJ0aWNhbE1lbnUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/Navbar/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xOYXZiYXJcX05hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/Navbar/_NavbarFront.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xOYXZiYXJcX05hdmJhckZyb250LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/Navbar/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xOYXZiYXJcX05hdmJhclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/_Scripts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xfU2NyaXB0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/_ScriptsFront.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xfU2NyaXB0c0Zyb250LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/_ScriptsIncludes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xfU2NyaXB0c0luY2x1ZGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/_ScriptsIncludesFront.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xfU2NyaXB0c0luY2x1ZGVzRnJvbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/_Styles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xfU3R5bGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/_StylesFront.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xfU3R5bGVzRnJvbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/Sections/_Variables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xTZWN0aW9uc1xfVmFyaWFibGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/_BlankLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xfQmxhbmtMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/_CommonMasterLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xfQ29tbW9uTWFzdGVyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/_ContentNavbarLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xfQ29udGVudE5hdmJhckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/_FrontLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xfRnJvbnRMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Layouts/_HorizontalLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGF5b3V0c1xfSG9yaXpvbnRhbExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Maps/Leaflet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFwc1xMZWFmbGV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Modals/Examples.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9kYWxzXEV4YW1wbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/AccountSettings/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcQWNjb3VudFNldHRpbmdzXEFjY291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/AccountSettings/Billing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcQWNjb3VudFNldHRpbmdzXEJpbGxpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/AccountSettings/Connections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcQWNjb3VudFNldHRpbmdzXENvbm5lY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/AccountSettings/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcQWNjb3VudFNldHRpbmdzXE5vdGlmaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/AccountSettings/Security.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcQWNjb3VudFNldHRpbmdzXFNlY3VyaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcRkFRLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Misc/ComingSoon.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcTWlzY1xDb21pbmdTb29uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Misc/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcTWlzY1xFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Misc/NotAuthorized.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcTWlzY1xOb3RBdXRob3JpemVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Misc/UnderMaintenance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcTWlzY1xVbmRlck1haW50ZW5hbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Pricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcUHJpY2luZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Profile/Connections.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcUHJvZmlsZVxDb25uZWN0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Profile/Projects.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcUHJvZmlsZVxQcm9qZWN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Profile/Teams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcUHJvZmlsZVxUZWFtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Pages/Profile/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZXNcUHJvZmlsZVxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Tables/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXEJhc2ljLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Tables/DataTables/Advanced.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXERhdGFUYWJsZXNcQWR2YW5jZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Tables/DataTables/Basic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXERhdGFUYWJsZXNcQmFzaWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Tables/DataTables/Extensions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFibGVzXERhdGFUYWJsZXNcRXh0ZW5zaW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Accordion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcQWNjb3JkaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Alerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcQWxlcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Badges.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcQmFkZ2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Buttons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcQnV0dG9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Carousel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcQ2Fyb3VzZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Collapse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcQ29sbGFwc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Dropdowns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcRHJvcGRvd25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcRm9vdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/ListGroups.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcTGlzdEdyb3Vwcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Modals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcTW9kYWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcTmF2YmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Offcanvas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcT2ZmY2FudmFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/PaginationBreadcrumbs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcUGFnaW5hdGlvbkJyZWFkY3J1bWJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Progress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcUHJvZ3Jlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Spinners.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcU3Bpbm5lcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/TabsPills.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcVGFic1BpbGxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Toasts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcVG9hc3RzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/TooltipsPopovers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcVG9vbHRpcHNQb3BvdmVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Ui/Typography.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVWlcVHlwb2dyYXBoeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Wizards/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2l6YXJkc1xDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Wizards/CreateDeal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2l6YXJkc1xDcmVhdGVEZWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/Wizards/PropertyListing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2l6YXJkc1xQcm9wZXJ0eUxpc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/WizardCheckout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXFdpemFyZENoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Macros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9NYWNyb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalAddNewAddress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxBZGROZXdBZGRyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalAddNewCc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxBZGROZXdDYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalAddPermission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxBZGRQZXJtaXNzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalAddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxBZGRSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalCreateApp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxDcmVhdGVBcHAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalEditCc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxFZGl0Q2MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalEditPermission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxFZGl0UGVybWlzc2lvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalEditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalEnableOtp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxFbmFibGVPdHAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalPricing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxQcmljaW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalReferEarn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxSZWZlckVhcm4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalSelectPaymentMethods.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxTZWxlY3RQYXltZW50TWV0aG9kcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalSelectPaymentProviders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxTZWxlY3RQYXltZW50UHJvdmlkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalShareProject.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxTaGFyZVByb2plY3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalTwoFactorAuth.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxUd29GYWN0b3JBdXRoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Modals/ModalUpgradePlan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9Nb2RhbHNcTW9kYWxVcGdyYWRlUGxhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Offcanvas/OffcanvasAddPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9PZmZjYW52YXNcT2ZmY2FudmFzQWRkUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_Partials/_Offcanvas/OffcanvasSendInvoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1BhcnRpYWxzXF9PZmZjYW52YXNcT2ZmY2FudmFzU2VuZEludm9pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Claudio/source/repos/clacostta/app-finance/src/FinanceApp.Web/template/Razor Pages/AspnetCoreFull/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
