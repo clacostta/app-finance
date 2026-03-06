@@ -73,7 +73,8 @@ public static class ServiceCollectionExtensions
                 options.SignIn.RequireConfirmedEmail = false;
             })
             .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders();
+            .AddDefaultTokenProviders()
+            .AddSignInManager();
 
         return services;
     }
