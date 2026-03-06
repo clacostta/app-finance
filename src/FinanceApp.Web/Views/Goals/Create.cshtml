@@ -1,0 +1,7 @@
+@model FinanceApp.Web.Models.Goals.GoalFormViewModel
+@{ ViewData["Title"] = "Nova meta"; }
+<h1 class="h4 mb-3">Nova meta</h1>
+<form method="post" class="card card-body">@Html.AntiForgeryToken()<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="mb-2"><label asp-for="Name" class="form-label"></label><input asp-for="Name" class="form-control"/></div>
+<div class="row g-2"><div class="col"><label asp-for="CurrentAmount" class="form-label"></label><input asp-for="CurrentAmount" class="form-control"/></div><div class="col"><label asp-for="TargetAmount" class="form-label"></label><input asp-for="TargetAmount" class="form-control"/></div><div class="col"><label asp-for="TargetDate" class="form-label"></label><input asp-for="TargetDate" type="date" class="form-control"/></div></div>
+<button class="btn btn-primary mt-3">Salvar</button></form>

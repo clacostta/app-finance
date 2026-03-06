@@ -1,0 +1,42 @@
+@model FinanceApp.Web.Models.Dashboard.DashboardPageViewModel
+@using System.Text.Json
+@{
+    ViewData["Title"] = "Dashboard";
+    var s = Model.Analytics.Summary;
+    var p = Model.Analytics.PreviousSummary;
+    var catLabels = JsonSerializer.Serialize(Model.Analytics.ExpenseByCategory.Select(x => x.Category));
+    var catValues = JsonSerializer.Serialize(Model.Analytics.ExpenseByCategory.Select(x => x.Total));
+    var trendLabels = JsonSerializer.Serialize(Model.Analytics.MonthlyTrend.Select(x => x.Label));
+    var trendIncome = JsonSerializer.Serialize(Model.Analytics.MonthlyTrend.Select(x => x.Income));
+    var trendExpense = JsonSerializer.Serialize(Model.Analytics.MonthlyTrend.Select(x => x.Expense));
+    var flowLabels = JsonSerializer.Serialize(Model.Analytics.CashFlowByDay.Select(x => x.Day));
+    var flowIncome = JsonSerializer.Serialize(Model.Analytics.CashFlowByDay.Select(x => x.Income));
+    var flowExpense = JsonSerializer.Serialize(Model.Analytics.CashFlowByDay.Select(x => x.Expense));
+}
+<div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h4">Dashboard financeiro</h1><div class="text-muted">Comparativo mês anterior: @(p.MonthlySavings.ToString("C"))</div></div>
+<div class="row g-3 mb-3">
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Saldo atual</small><h4>@s.CurrentBalance.ToString("C")</h4></div></div></div>
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Receitas no mês</small><h4>@s.MonthlyIncome.ToString("C")</h4></div></div></div>
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Despesas no mês</small><h4>@s.MonthlyExpense.ToString("C")</h4></div></div></div>
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Economia no mês</small><h4>@s.MonthlySavings.ToString("C")</h4></div></div></div>
+</div>
+<div class="row g-3">
+    <div class="col-lg-8"><div class="card"><div class="card-body"><h6>Evolução mensal (6 meses)</h6><canvas id="trendChart" height="100"></canvas></div></div></div>
+    <div class="col-lg-4"><div class="card"><div class="card-body"><h6>Despesas por categoria</h6><canvas id="categoryChart" height="220"></canvas></div></div></div>
+    <div class="col-12"><div class="card"><div class="card-body"><h6>Fluxo de caixa diário</h6><canvas id="cashFlowChart" height="80"></canvas></div></div></div>
+</div>
+<div class="card mt-3"><div class="card-body"><h6>Insights automáticos</h6>
+@if (!Model.Insights.Any()) { <div class="text-muted">Sem insights no momento.</div> }
+else {
+<ul class="mb-0">
+@foreach(var i in Model.Insights){ <li><strong>@i.Title:</strong> @i.Description</li> }
+</ul>
+}
+</div></div>
+@section Scripts {
+<script>
+new Chart(document.getElementById('categoryChart'), { type:'doughnut', data:{ labels:@Html.Raw(catLabels), datasets:[{ data:@Html.Raw(catValues) }] } });
+new Chart(document.getElementById('trendChart'), { type:'bar', data:{ labels:@Html.Raw(trendLabels), datasets:[{ label:'Receitas', data:@Html.Raw(trendIncome) },{ label:'Despesas', data:@Html.Raw(trendExpense) }]}});
+new Chart(document.getElementById('cashFlowChart'), { type:'line', data:{ labels:@Html.Raw(flowLabels), datasets:[{ label:'Entradas', data:@Html.Raw(flowIncome) },{ label:'Saídas', data:@Html.Raw(flowExpense) }]}});
+</script>
+}

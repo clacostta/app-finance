@@ -1,0 +1,14 @@
+@model IReadOnlyCollection<FinanceApp.Application.DTOs.Budgets.BudgetDto>
+@{
+    ViewData["Title"] = "Orçamentos";
+    var year = (int)ViewBag.Year;
+    var month = (int)ViewBag.Month;
+}
+<div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h4">Orçamentos (@month/@year)</h1><a asp-action="Create" class="btn btn-primary">Novo orçamento</a></div>
+<form method="get" class="row g-2 mb-3"><div class="col"><input type="number" name="month" value="@month" class="form-control" min="1" max="12"/></div><div class="col"><input type="number" name="year" value="@year" class="form-control" min="2000" max="2100"/></div><div class="col"><button class="btn btn-outline-primary w-100">Aplicar</button></div></form>
+<form asp-action="GenerateAlerts" method="post" class="mb-3">@Html.AntiForgeryToken()<input type="hidden" name="month" value="@month"/><input type="hidden" name="year" value="@year"/><button class="btn btn-warning btn-sm">Gerar alertas de orçamento</button></form>
+<div class="card"><div class="card-body"><table class="table table-striped"><thead><tr><th>Categoria</th><th class="text-end">Planejado</th><th class="text-end">Realizado</th><th class="text-end">Saldo</th><th></th></tr></thead><tbody>
+@foreach(var i in Model){
+<tr><td>@i.CategoryName</td><td class="text-end">@i.PlannedAmount.ToString("C")</td><td class="text-end">@i.SpentAmount.ToString("C")</td><td class="text-end @(i.Remaining<0?"text-danger":"text-success")">@i.Remaining.ToString("C")</td><td class="text-end"><a asp-action="Edit" asp-route-id="@i.Id" class="btn btn-sm btn-outline-primary">Editar</a><form asp-action="Delete" method="post" class="d-inline">@Html.AntiForgeryToken()<input type="hidden" name="id" value="@i.Id"/><input type="hidden" name="month" value="@month"/><input type="hidden" name="year" value="@year"/><button class="btn btn-sm btn-outline-danger">Excluir</button></form></td></tr>
+}
+</tbody></table></div></div>

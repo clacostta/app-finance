@@ -1,0 +1,110 @@
+@model FinanceApp.Web.Models.Imports.ImportOfxViewModel
+@using FinanceApp.Application.DTOs
+@{
+    ViewData["Title"] = "Importação OFX";
+    var history = ViewBag.History as IReadOnlyCollection<ImportHistoryItemDto> ?? Array.Empty<ImportHistoryItemDto>();
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h4">Importação OFX</h1>
+    <a asp-action="History" class="btn btn-outline-secondary btn-sm">Histórico completo</a>
+</div>
+
+<div class="row g-3">
+    <div class="col-lg-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="h6">1) Enviar arquivo</h2>
+                <form asp-action="Preview" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="mb-3">
+                        <label asp-for="File" class="form-label">Arquivo OFX</label>
+                        <input asp-for="File" type="file" accept=".ofx" class="form-control" />
+                        <div class="form-text">Aceito: .ofx até 2MB.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gerar preview</button>
+                </form>
+            </div>
+        </div>
+
+        @if (Model.Preview is not null)
+        {
+            <div class="card shadow-sm mt-3">
+                <div class="card-body">
+                    <h2 class="h6">2) Revisão assistida</h2>
+                    <p class="mb-1"><strong>Arquivo:</strong> @Model.Preview.FileName</p>
+                    <p class="mb-1"><strong>Total:</strong> @Model.Preview.TotalRecords</p>
+                    <p class="mb-1 text-success"><strong>Novos:</strong> @Model.Preview.NewRecords</p>
+                    <p class="mb-2 text-warning"><strong>Duplicados:</strong> @Model.Preview.DuplicatedRecords</p>
+
+                    @if (Model.Preview.Warnings.Any())
+                    {
+                        <div class="alert alert-warning py-2">
+                            <strong>Inconsistências:</strong>
+                            <ul class="mb-0">
+                                @foreach (var warning in Model.Preview.Warnings)
+                                {
+                                    <li>@warning</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <form asp-action="Confirm" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" asp-for="EncodedContent" />
+                        <input type="hidden" asp-for="FileName" />
+                        <button type="submit" class="btn btn-success">Confirmar importação</button>
+                    </form>
+                </div>
+            </div>
+        }
+
+        @if (Model.Result is not null)
+        {
+            <div class="alert alert-info mt-3">
+                <strong>Importação finalizada:</strong> @Model.Result.Status<br />
+                Total: @Model.Result.TotalRecords | Importados: @Model.Result.ImportedRecords | Duplicados: @Model.Result.DuplicatedRecords | Falhas: @Model.Result.FailedRecords
+            </div>
+        }
+    </div>
+
+    <div class="col-lg-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="h6">Últimas importações</h2>
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Arquivo</th>
+                                <th>Status</th>
+                                <th class="text-end">Importados</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @if (!history.Any())
+                        {
+                            <tr><td colspan="4" class="text-muted text-center">Nenhuma importação ainda.</td></tr>
+                        }
+                        else
+                        {
+                            @foreach (var item in history.Take(8))
+                            {
+                                <tr>
+                                    <td>@item.ImportedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td>@item.FileName</td>
+                                    <td>@item.Status</td>
+                                    <td class="text-end">@item.ImportedRecords/@item.TotalRecords</td>
+                                </tr>
+                            }
+                        }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

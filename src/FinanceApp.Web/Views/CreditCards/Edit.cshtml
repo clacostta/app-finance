@@ -1,0 +1,10 @@
+@model FinanceApp.Web.Models.CreditCards.CreditCardFormViewModel
+@{ ViewData["Title"] = "Editar cartão"; var institutions = (IEnumerable<dynamic>)ViewBag.Institutions; }
+<h1 class="h4 mb-3">Editar cartão</h1>
+<form method="post" class="card card-body">@Html.AntiForgeryToken()<input asp-for="Id" type="hidden" /><div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="mb-2"><label asp-for="Name" class="form-label"></label><input asp-for="Name" class="form-control" /></div>
+<div class="mb-2"><label asp-for="FinancialInstitutionId" class="form-label">Instituição</label><select asp-for="FinancialInstitutionId" class="form-select">@foreach(var i in institutions){<option value="@i.Id">@i.Name</option>}</select></div>
+<div class="mb-2"><label asp-for="LimitAmount" class="form-label"></label><input asp-for="LimitAmount" class="form-control" /></div>
+<div class="row"><div class="col"><label asp-for="ClosingDay" class="form-label"></label><input asp-for="ClosingDay" class="form-control"/></div><div class="col"><label asp-for="DueDay" class="form-label"></label><input asp-for="DueDay" class="form-control"/></div></div>
+<div class="form-check mb-3 mt-2"><input asp-for="IsActive" class="form-check-input"/><label asp-for="IsActive" class="form-check-label">Ativo</label></div>
+<button class="btn btn-primary" type="submit">Salvar alterações</button></form>
