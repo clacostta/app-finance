@@ -26,7 +26,8 @@ public static class ServiceCollectionExtensions
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-        var provider = configuration.GetValue<string>("DatabaseProvider") ?? "PostgreSql";
+        var provider = configuration["DatabaseProvider"] ?? "PostgreSql";
+
         var connectionString = configuration.GetConnectionString("DefaultConnection")
             ?? throw new InvalidOperationException("DefaultConnection was not configured.");
 
@@ -62,19 +63,19 @@ public static class ServiceCollectionExtensions
         services.AddScoped<ISubscriptionService, SubscriptionService>();
         services.AddScoped<INotificationService, NotificationService>();
 
-        services.AddIdentity<AppIdentityUser, IdentityRole>(options =>
-            {
-                options.Password.RequiredLength = 8;
-                options.Password.RequireDigit = true;
-                options.Password.RequireUppercase = true;
-                options.Password.RequireLowercase = true;
-                options.Password.RequireNonAlphanumeric = true;
-                options.User.RequireUniqueEmail = true;
-                options.SignIn.RequireConfirmedEmail = false;
-            })
-            .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders()
-            .AddSignInManager();
+        services
+     .AddIdentityCore<AppIdentityUser>(options =>
+     {
+         options.Password.RequiredLength = 8;
+         options.Password.RequireDigit = true;
+         options.Password.RequireUppercase = true;
+         options.Password.RequireLowercase = true;
+         options.Password.RequireNonAlphanumeric = true;
+         options.User.RequireUniqueEmail = true;
+         options.SignIn.RequireConfirmedEmail = false;
+     })
+     .AddRoles<IdentityRole>()
+     .AddEntityFrameworkStores<AppDbContext>();
 
         return services;
     }

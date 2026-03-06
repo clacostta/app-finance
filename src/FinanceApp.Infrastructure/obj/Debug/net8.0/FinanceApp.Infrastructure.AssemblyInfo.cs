@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FinanceApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f4fdc168d2e7d829d30e99b01d94cb9ee9a79b9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+adfa33171dcba0bab6a15a2e9a2a867d8e004a40")]
 [assembly: System.Reflection.AssemblyProductAttribute("FinanceApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FinanceApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,33 +1,104 @@
 @model IReadOnlyCollection<FinanceApp.Application.DTOs.Transactions.TransactionDto>
+
 @{
     ViewData["Title"] = "Lançamentos";
-    var page = (int)ViewBag.Page;
+    var currentPage = (int)ViewBag.Page;
     var totalPages = (int)ViewBag.TotalPages;
     var pageSize = (int)ViewBag.PageSize;
 }
-<div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h4">Lançamentos</h1><a asp-action="Create" class="btn btn-primary">Novo lançamento</a></div>
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h4">Lançamentos</h1>
+    <a asp-action="Create" class="btn btn-primary">Novo lançamento</a>
+</div>
+
 <form method="get" class="row g-2 mb-3">
-    <div class="col-md-2"><input type="date" name="from" value="@ViewBag.FilterFrom" class="form-control" /></div>
-    <div class="col-md-2"><input type="date" name="to" value="@ViewBag.FilterTo" class="form-control" /></div>
-    <div class="col-md-4"><input type="text" name="search" value="@ViewBag.FilterSearch" class="form-control" placeholder="Buscar descrição" /></div>
-    <div class="col-md-2"><select name="pageSize" class="form-select"><option selected value="@pageSize">@pageSize/pg</option><option value="25">25/pg</option><option value="50">50/pg</option><option value="100">100/pg</option></select></div>
-    <div class="col-md-2"><button class="btn btn-outline-primary w-100">Filtrar</button></div>
+    <div class="col-md-2">
+        <input type="date" name="from" value="@ViewBag.FilterFrom" class="form-control" />
+    </div>
+    <div class="col-md-2">
+        <input type="date" name="to" value="@ViewBag.FilterTo" class="form-control" />
+    </div>
+    <div class="col-md-4">
+        <input type="text" name="search" value="@ViewBag.FilterSearch" class="form-control" placeholder="Buscar descrição" />
+    </div>
+    <div class="col-md-2">
+        <select name="pageSize" class="form-select">
+            <option selected value="@pageSize">@pageSize/pg</option>
+            <option value="25">25/pg</option>
+            <option value="50">50/pg</option>
+            <option value="100">100/pg</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-outline-primary w-100">Filtrar</button>
+    </div>
 </form>
-<div class="card"><div class="card-body"><table class="table table-striped align-middle"><thead><tr><th>Data</th><th>Descrição</th><th>Tipo</th><th class="text-end">Valor</th><th></th></tr></thead><tbody>
-@foreach (var i in Model){
-<tr><td>@i.TransactionDate.ToString("dd/MM/yyyy")</td><td>@i.Description</td><td>@i.Type</td><td class="text-end">@i.Amount.ToString("C")</td><td class="text-end"><a asp-action="Edit" asp-route-id="@i.Id" class="btn btn-sm btn-outline-primary">Editar</a><form asp-action="Delete" asp-route-id="@i.Id" method="post" class="d-inline">@Html.AntiForgeryToken()<button class="btn btn-sm btn-outline-danger">Excluir</button></form></td></tr>
-}
-</tbody></table></div></div>
+
+<div class="card">
+    <div class="card-body">
+        <table class="table table-striped align-middle">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                    <th class="text-end">Valor</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var i in Model)
+                {
+                    <tr>
+                        <td>@i.TransactionDate.ToString("dd/MM/yyyy")</td>
+                        <td>@i.Description</td>
+                        <td>@i.Type</td>
+                        <td class="text-end">@i.Amount.ToString("C")</td>
+                        <td class="text-end">
+                            <a asp-action="Edit" asp-route-id="@i.Id" class="btn btn-sm btn-outline-primary">Editar</a>
+                            <form asp-action="Delete" asp-route-id="@i.Id" method="post" class="d-inline">
+                                @Html.AntiForgeryToken()
+                                <button class="btn btn-sm btn-outline-danger">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
 @if (totalPages > 1)
 {
     <nav class="mt-3">
         <ul class="pagination pagination-sm">
-            <li class="page-item @(page <= 1 ? "disabled" : "")">
-                <a class="page-link" asp-action="Index" asp-route-page="@(page-1)" asp-route-pageSize="@pageSize" asp-route-from="@ViewBag.FilterFrom" asp-route-to="@ViewBag.FilterTo" asp-route-search="@ViewBag.FilterSearch">Anterior</a>
+            <li class="page-item @(currentPage <= 1 ? "disabled" : "")">
+                <a class="page-link"
+                   asp-action="Index"
+                   asp-route-page="@(currentPage - 1)"
+                   asp-route-pageSize="@pageSize"
+                   asp-route-from="@ViewBag.FilterFrom"
+                   asp-route-to="@ViewBag.FilterTo"
+                   asp-route-search="@ViewBag.FilterSearch">
+                    Anterior
+                </a>
             </li>
-            <li class="page-item disabled"><span class="page-link">Página @page de @totalPages</span></li>
-            <li class="page-item @(page >= totalPages ? "disabled" : "")">
-                <a class="page-link" asp-action="Index" asp-route-page="@(page+1)" asp-route-pageSize="@pageSize" asp-route-from="@ViewBag.FilterFrom" asp-route-to="@ViewBag.FilterTo" asp-route-search="@ViewBag.FilterSearch">Próxima</a>
+
+            <li class="page-item disabled">
+                <span class="page-link">Página @currentPage de @totalPages</span>
+            </li>
+
+            <li class="page-item @(currentPage >= totalPages ? "disabled" : "")">
+                <a class="page-link"
+                   asp-action="Index"
+                   asp-route-page="@(currentPage + 1)"
+                   asp-route-pageSize="@pageSize"
+                   asp-route-from="@ViewBag.FilterFrom"
+                   asp-route-to="@ViewBag.FilterTo"
+                   asp-route-search="@ViewBag.FilterSearch">
+                    Próxima
+                </a>
             </li>
         </ul>
     </nav>

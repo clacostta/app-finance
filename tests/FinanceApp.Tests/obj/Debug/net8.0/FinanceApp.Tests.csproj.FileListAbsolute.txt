@@ -1,0 +1,7 @@
+C:\Users\Claudio\source\repos\clacostta\app-finance\tests\FinanceApp.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_FinanceApp.Tests
+C:\Users\Claudio\source\repos\clacostta\app-finance\tests\FinanceApp.Tests\obj\Debug\net8.0\FinanceApp.Tests.csproj.AssemblyReference.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\tests\FinanceApp.Tests\obj\Debug\net8.0\FinanceApp.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claudio\source\repos\clacostta\app-finance\tests\FinanceApp.Tests\obj\Debug\net8.0\FinanceApp.Tests.AssemblyInfoInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\tests\FinanceApp.Tests\obj\Debug\net8.0\FinanceApp.Tests.AssemblyInfo.cs
+C:\Users\Claudio\source\repos\clacostta\app-finance\tests\FinanceApp.Tests\obj\Debug\net8.0\FinanceApp.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\tests\FinanceApp.Tests\obj\Debug\net8.0\FinanceApp.Tests.sourcelink.json

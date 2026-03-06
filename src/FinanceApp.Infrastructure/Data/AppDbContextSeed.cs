@@ -23,10 +23,10 @@ public static class AppDbContextSeed
                 new TransactionCategory(systemUserId, "Moradia", true),
                 new TransactionCategory(systemUserId, "Transporte", true),
                 new TransactionCategory(systemUserId, "Lazer", true),
-                new TransactionCategory(systemUserId, "Saúde", true),
+                new TransactionCategory(systemUserId, "Saúde", true),   
                 new TransactionCategory(systemUserId, "Educação", true),
                 new TransactionCategory(systemUserId, "Salário", true));
-        }
+        } 
 
         await context.SaveChangesAsync();
     }
