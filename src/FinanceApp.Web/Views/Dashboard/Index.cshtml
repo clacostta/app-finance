@@ -1,0 +1,26 @@
+@model FinanceApp.Application.DTOs.DashboardSummaryDto
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<div class="row g-3 mb-3">
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Saldo atual</small><h4>@Model.CurrentBalance.ToString("C")</h4></div></div></div>
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Receitas no mês</small><h4>@Model.MonthlyIncome.ToString("C")</h4></div></div></div>
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Despesas no mês</small><h4>@Model.MonthlyExpense.ToString("C")</h4></div></div></div>
+    <div class="col-md-3"><div class="card card-kpi"><div class="card-body"><small>Economia no mês</small><h4>@Model.MonthlySavings.ToString("C")</h4></div></div></div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <h5>Evolução financeira (base inicial)</h5>
+        <canvas id="balanceChart" height="100"></canvas>
+    </div>
+</div>
+@section Scripts {
+<script>
+    const ctx = document.getElementById('balanceChart');
+    new Chart(ctx, {
+      type: 'line',
+      data: { labels: ['Sem 1','Sem 2','Sem 3','Sem 4'], datasets: [{ data: [1200,1300,1000,1500], borderColor:'#4f46e5'}] },
+      options: { plugins: { legend: { display: false }}}
+    });
+</script>
+}
