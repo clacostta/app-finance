@@ -49,6 +49,14 @@ public class AppDbContext : IdentityDbContext<AppIdentityUser>, IAppDbContext
             entity.Property(x => x.Description).HasMaxLength(250).IsRequired();
         });
 
+
+        builder.Entity<ImportBatch>(entity =>
+        {
+            entity.HasIndex(x => new { x.UserId, x.FileHash }).IsUnique();
+            entity.Property(x => x.FileName).HasMaxLength(255).IsRequired();
+            entity.Property(x => x.FileHash).HasMaxLength(128).IsRequired();
+        });
+
         builder.Entity<Account>().Property(x => x.InitialBalance).HasPrecision(18, 2);
         builder.Entity<CreditCard>().Property(x => x.LimitAmount).HasPrecision(18, 2);
         builder.Entity<Budget>().Property(x => x.PlannedAmount).HasPrecision(18, 2);

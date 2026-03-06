@@ -2,6 +2,7 @@ using FinanceApp.Application.Abstractions;
 using FinanceApp.Application.Services;
 using FinanceApp.Infrastructure.Data;
 using FinanceApp.Infrastructure.Identity;
+using FinanceApp.Infrastructure.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -31,6 +32,8 @@ public static class ServiceCollectionExtensions
 
         services.AddScoped<IAppDbContext>(sp => sp.GetRequiredService<AppDbContext>());
         services.AddScoped<DashboardService>();
+        services.AddScoped<IOfxImportService, OfxImportService>();
+        services.AddScoped<IOfxParser, OfxParser>();
 
         services.AddIdentity<AppIdentityUser, IdentityRole>(options =>
             {

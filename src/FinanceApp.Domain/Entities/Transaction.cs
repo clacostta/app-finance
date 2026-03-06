@@ -35,4 +35,28 @@ public class Transaction : BaseEntity
         Amount = amount;
         TransactionDate = transactionDate;
     }
+
+    public void SetImportMetadata(Guid? accountId, Guid? creditCardId, DateTime? postedDate, string? externalId, Guid importBatchId, string source)
+    {
+        AccountId = accountId;
+        CreditCardId = creditCardId;
+        PostedDate = postedDate;
+        ExternalId = externalId;
+        ImportBatchId = importBatchId;
+        Source = source;
+        IsSubscriptionCandidate = DetectSubscriptionCandidate(Description);
+    }
+
+    public bool HasSameSignature(DateTime txDate, decimal amount, string description)
+    {
+        return TransactionDate.Date == txDate.Date
+            && Amount == amount
+            && Description.Trim().ToLowerInvariant() == description.Trim().ToLowerInvariant();
+    }
+
+    private static bool DetectSubscriptionCandidate(string description)
+    {
+        var recurringKeywords = new[] { "netflix", "spotify", "amazon", "youtube", "gym", "academia", "prime" };
+        return recurringKeywords.Any(k => description.Contains(k, StringComparison.OrdinalIgnoreCase));
+    }
 }

@@ -2,8 +2,9 @@
 
 Sistema web de controle financeiro pessoal/familiar com arquitetura em camadas (Clean Architecture), ASP.NET Core, EF Core, PostgreSQL/SQL Server e frontend MVC + jQuery.
 
-## Fase 1 entregue
+## Fases entregues
 
+### Fase 1
 - Visão de arquitetura
 - Estrutura de solução
 - Entidades de domínio iniciais
@@ -12,13 +13,22 @@ Sistema web de controle financeiro pessoal/familiar com arquitetura em camadas (
 - Autenticação com ASP.NET Core Identity
 - Layout base + telas iniciais
 
+### Fase 2
+- Upload manual de arquivo OFX
+- Parser OFX com tolerância a variações simples
+- Preview de importação (novos x duplicados)
+- Prevenção de duplicidade por `FITID` e assinatura (`data + valor + descrição`)
+- Idempotência por hash de arquivo (não reimporta lote já processado)
+- Persistência de lote (`ImportBatch`) e metadados de arquivo (`ImportedFile`)
+- Histórico de importações com status e métricas
+
 ## Arquitetura
 
 ```text
 src/
   FinanceApp.Domain         -> Entidades, enums e regras de domínio
   FinanceApp.Application    -> Casos de uso/serviços e contratos
-  FinanceApp.Infrastructure -> EF Core, Identity, seed, migrações
+  FinanceApp.Infrastructure -> EF Core, Identity, seed, parser OFX, migrações
   FinanceApp.Web            -> Controllers, Views, assets e bootstrap da aplicação
 tests/
   FinanceApp.Tests          -> Testes unitários/integrados (base)
@@ -29,7 +39,8 @@ tests/
 - **Identity** para autenticação segura e gestão de credenciais.
 - **EF Core** com provider configurável (`DatabaseProvider`: `PostgreSql` ou `SqlServer`).
 - **Cookie seguro** com `HttpOnly`, `SecurePolicy=Always`, antiforgery nas ações de formulário.
-- **Modelagem pronta para evolução** dos módulos OFX, categorização automática, relatórios e metas.
+- **Importação OFX** com preview e validações de tipo/tamanho.
+- **Idempotência** via SHA-256 do arquivo e controle por lote de importação.
 
 ## Como executar localmente
 
@@ -65,11 +76,6 @@ dotnet run --project src/FinanceApp.Web
 - Senha: `Admin@1234`
 
 ## Próximas fases
-
-### Fase 2
-- Upload OFX, parser robusto e fluxo de preview/revisão.
-- Deduplicação por hash + assinatura da transação.
-- Histórico de importações e logs.
 
 ### Fase 3
 - CRUD completo de lançamentos, categorias, contas e cartões.

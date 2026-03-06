@@ -11,5 +11,6 @@ public interface IAppDbContext
     DbSet<Transaction> Transactions { get; }
     DbSet<TransactionCategory> TransactionCategories { get; }
     DbSet<ImportBatch> ImportBatches { get; }
+    DbSet<ImportedFile> ImportedFiles { get; }
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
 }

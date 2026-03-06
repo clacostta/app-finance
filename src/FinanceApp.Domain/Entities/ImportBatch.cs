@@ -24,4 +24,23 @@ public class ImportBatch : BaseEntity
         FileName = fileName;
         FileHash = fileHash;
     }
+
+    public void StartProcessing() => Status = ImportBatchStatus.Processing;
+
+    public void Complete(int total, int imported, int duplicated, int failed)
+    {
+        TotalRecords = total;
+        ImportedRecords = imported;
+        DuplicatedRecords = duplicated;
+        FailedRecords = failed;
+        Status = failed > 0 ? ImportBatchStatus.CompletedWithWarnings : ImportBatchStatus.Completed;
+        Touch();
+    }
+
+    public void Fail(string errorMessage)
+    {
+        Status = ImportBatchStatus.Failed;
+        ErrorMessage = errorMessage;
+        Touch();
+    }
 }

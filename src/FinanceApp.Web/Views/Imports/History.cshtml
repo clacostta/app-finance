@@ -1,0 +1,50 @@
+@model IReadOnlyCollection<FinanceApp.Application.DTOs.ImportHistoryItemDto>
+@{
+    ViewData["Title"] = "Histórico de importações";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h4">Histórico de importações OFX</h1>
+    <a asp-action="Index" class="btn btn-outline-primary btn-sm">Nova importação</a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Arquivo</th>
+                        <th>Status</th>
+                        <th>Total</th>
+                        <th>Importados</th>
+                        <th>Duplicados</th>
+                        <th>Falhas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @if (!Model.Any())
+                {
+                    <tr><td colspan="7" class="text-center text-muted">Nenhum lote encontrado.</td></tr>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.ImportedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@item.FileName</td>
+                            <td>@item.Status</td>
+                            <td>@item.TotalRecords</td>
+                            <td>@item.ImportedRecords</td>
+                            <td>@item.DuplicatedRecords</td>
+                            <td>@item.FailedRecords</td>
+                        </tr>
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
