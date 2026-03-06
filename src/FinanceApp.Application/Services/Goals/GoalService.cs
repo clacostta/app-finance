@@ -18,6 +18,7 @@ public class GoalService : IGoalService
     public async Task<IReadOnlyCollection<GoalDto>> ListAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         return await _context.Goals
+            .AsNoTracking()
             .Where(x => x.UserId == userId)
             .OrderBy(x => x.TargetDate)
             .Select(x => new GoalDto(
@@ -33,6 +34,7 @@ public class GoalService : IGoalService
     public async Task<GoalDto?> GetAsync(Guid userId, Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.Goals
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Id == id)
             .Select(x => new GoalDto(x.Id, x.Name, x.TargetAmount, x.CurrentAmount, x.TargetDate, x.TargetAmount <= 0 ? 0 : (x.CurrentAmount / x.TargetAmount) * 100))
             .FirstOrDefaultAsync(cancellationToken);

@@ -18,6 +18,7 @@ public class ReportService : IReportService
     public async Task<ReportBundleDto> GetBundleAsync(Guid userId, DateTime from, DateTime to, CancellationToken cancellationToken = default)
     {
         var query = _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.TransactionDate >= from.Date && x.TransactionDate < to.Date.AddDays(1));
 
         var expenseByCategory = await query

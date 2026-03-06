@@ -24,13 +24,20 @@ public class TransactionsController : Controller
         _categoryService = categoryService;
     }
 
-    public async Task<IActionResult> Index(DateTime? from, DateTime? to, string? search, CancellationToken cancellationToken)
+    public async Task<IActionResult> Index(DateTime? from, DateTime? to, string? search, int page = 1, int pageSize = 25, CancellationToken cancellationToken = default)
     {
         var userId = UserIdResolver.Resolve(User);
-        var items = await _service.ListAsync(userId, from, to, search, cancellationToken);
+        var total = await _service.CountAsync(userId, from, to, search, cancellationToken);
+        var items = await _service.ListAsync(userId, from, to, search, page, pageSize, cancellationToken);
+
         ViewBag.FilterFrom = from?.ToString("yyyy-MM-dd");
         ViewBag.FilterTo = to?.ToString("yyyy-MM-dd");
         ViewBag.FilterSearch = search;
+        ViewBag.Page = page;
+        ViewBag.PageSize = pageSize;
+        ViewBag.Total = total;
+        ViewBag.TotalPages = (int)Math.Ceiling(total / (double)Math.Max(1, pageSize));
+
         return View(items);
     }
 
@@ -42,7 +49,6 @@ public class TransactionsController : Controller
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(TransactionFormViewModel model, CancellationToken cancellationToken)
     {
         if (!ModelState.IsValid)
@@ -79,7 +85,6 @@ public class TransactionsController : Controller
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(TransactionFormViewModel model, CancellationToken cancellationToken)
     {
         if (!ModelState.IsValid || model.Id is null)
@@ -96,7 +101,6 @@ public class TransactionsController : Controller
     }
 
     [HttpPost]
-    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Delete(Guid id, CancellationToken cancellationToken)
     {
         var userId = UserIdResolver.Resolve(User);

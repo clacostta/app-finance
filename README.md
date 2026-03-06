@@ -40,6 +40,13 @@ Sistema web de controle financeiro pessoal/familiar com arquitetura em camadas (
 - Painel de assinaturas detectadas com projeção anual
 - Central de notificações e geração de alertas de orçamento excedido
 
+### Fase 6
+- Hardening de segurança: antiforgery global, rate limiting, security headers e página de erro amigável
+- Reforço de validação no upload OFX (size limit, sanitização de nome e validação de conteúdo)
+- Otimizações de performance em leituras com `AsNoTracking` e paginação server-side de lançamentos
+- Ampliação de testes para paginação/filtro e marcação de notificações como lidas
+- Documentação final consolidada para execução e evolução
+
 ## Arquitetura
 
 ```text
@@ -95,6 +102,3 @@ dotnet run --project src/FinanceApp.Web
 
 ## Próximas fases
 
-### Fase 6
-- Testes avançados, hardening de segurança e otimizações.
-- Documentação final de produção.

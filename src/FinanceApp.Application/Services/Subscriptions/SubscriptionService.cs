@@ -19,6 +19,7 @@ public class SubscriptionService : ISubscriptionService
     public async Task<IReadOnlyCollection<SubscriptionDto>> ListAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         return await _context.SubscriptionDetections
+            .AsNoTracking()
             .Where(x => x.UserId == userId)
             .OrderByDescending(x => x.AverageAmount)
             .Select(x => new SubscriptionDto(x.Id, x.Merchant, x.AverageAmount, x.OccurrenceCount, x.AverageAmount * 12, x.IsActive))
@@ -28,6 +29,7 @@ public class SubscriptionService : ISubscriptionService
     public async Task<int> RefreshDetectionsAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         var candidates = await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Type == TransactionType.Expense && x.IsSubscriptionCandidate)
             .GroupBy(x => x.Description)
             .Select(g => new { Merchant = g.Key, Count = g.Count(), Avg = g.Average(x => x.Amount) })

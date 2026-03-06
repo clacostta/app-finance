@@ -15,6 +15,7 @@ public class CategoryCrudService : ICategoryCrudService
     public async Task<IReadOnlyCollection<CategoryDto>> ListAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         return await _context.TransactionCategories
+            .AsNoTracking()
             .Where(x => x.UserId == userId || x.IsSystemDefault)
             .OrderBy(x => x.Name)
             .Select(x => new CategoryDto(x.Id, x.Name, x.IsSystemDefault))
@@ -24,6 +25,7 @@ public class CategoryCrudService : ICategoryCrudService
     public async Task<CategoryDto?> GetAsync(Guid userId, Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.TransactionCategories
+            .AsNoTracking()
             .Where(x => (x.UserId == userId || x.IsSystemDefault) && x.Id == id)
             .Select(x => new CategoryDto(x.Id, x.Name, x.IsSystemDefault))
             .FirstOrDefaultAsync(cancellationToken);

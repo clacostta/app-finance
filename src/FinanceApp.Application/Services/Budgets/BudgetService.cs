@@ -19,6 +19,7 @@ public class BudgetService : IBudgetService
     public async Task<IReadOnlyCollection<BudgetDto>> ListAsync(Guid userId, int year, int month, CancellationToken cancellationToken = default)
     {
         var items = await _context.Budgets
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Year == year && x.Month == month)
             .ToListAsync(cancellationToken);
 
@@ -28,6 +29,7 @@ public class BudgetService : IBudgetService
         var end = start.AddMonths(1);
 
         var spends = await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Type == TransactionType.Expense && x.TransactionDate >= start && x.TransactionDate < end && x.CategoryId.HasValue)
             .GroupBy(x => x.CategoryId!.Value)
             .Select(g => new { CategoryId = g.Key, Total = g.Sum(x => x.Amount) })

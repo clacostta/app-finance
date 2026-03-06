@@ -15,6 +15,7 @@ public class AccountCrudService : IAccountCrudService
     public async Task<IReadOnlyCollection<AccountDto>> ListAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         return await _context.Accounts
+            .AsNoTracking()
             .Where(x => x.UserId == userId)
             .Include(x => x.FinancialInstitution)
             .OrderBy(x => x.Name)
@@ -25,6 +26,7 @@ public class AccountCrudService : IAccountCrudService
     public async Task<AccountDto?> GetAsync(Guid userId, Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.Accounts
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Id == id)
             .Include(x => x.FinancialInstitution)
             .Select(x => new AccountDto(x.Id, x.Name, x.InitialBalance, x.IsActive, x.FinancialInstitutionId, x.FinancialInstitution.Name))

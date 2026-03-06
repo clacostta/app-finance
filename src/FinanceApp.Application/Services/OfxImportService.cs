@@ -26,6 +26,7 @@ public class OfxImportService : IOfxImportService
 
         var parse = _ofxParser.Parse(content);
         var existing = await _context.Transactions
+            .AsNoTracking()
             .Where(t => t.UserId == userId)
             .Select(t => new { t.TransactionDate, t.Amount, t.Description, t.ExternalId })
             .ToListAsync(cancellationToken);
@@ -62,6 +63,7 @@ public class OfxImportService : IOfxImportService
     {
         var preview = await PreviewAsync(userId, fileName, contentStream, cancellationToken);
         var existingBatch = await _context.ImportBatches
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.FileHash == preview.FileHash)
             .OrderByDescending(x => x.ImportedAt)
             .FirstOrDefaultAsync(cancellationToken);
@@ -135,6 +137,7 @@ public class OfxImportService : IOfxImportService
     public async Task<IReadOnlyCollection<ImportHistoryItemDto>> GetHistoryAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         return await _context.ImportBatches
+            .AsNoTracking()
             .Where(x => x.UserId == userId)
             .OrderByDescending(x => x.ImportedAt)
             .Select(x => new ImportHistoryItemDto(

@@ -19,6 +19,7 @@ public class NotificationService : INotificationService
     public async Task<IReadOnlyCollection<NotificationDto>> ListAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         return await _context.Notifications
+            .AsNoTracking()
             .Where(x => x.UserId == userId)
             .OrderByDescending(x => x.CreatedAt)
             .Take(100)
@@ -32,10 +33,12 @@ public class NotificationService : INotificationService
         var end = start.AddMonths(1);
 
         var budgets = await _context.Budgets
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Year == referenceDate.Year && x.Month == referenceDate.Month)
             .ToListAsync(cancellationToken);
 
         var spendByCategory = await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Type == TransactionType.Expense && x.TransactionDate >= start && x.TransactionDate < end && x.CategoryId.HasValue)
             .GroupBy(x => x.CategoryId!.Value)
             .Select(g => new { CategoryId = g.Key, Total = g.Sum(x => x.Amount) })

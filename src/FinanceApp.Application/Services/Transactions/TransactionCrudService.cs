@@ -12,24 +12,32 @@ public class TransactionCrudService : ITransactionCrudService
 
     public TransactionCrudService(IAppDbContext context) => _context = context;
 
-    public async Task<IReadOnlyCollection<TransactionDto>> ListAsync(Guid userId, DateTime? from, DateTime? to, string? search, CancellationToken cancellationToken = default)
+    public async Task<IReadOnlyCollection<TransactionDto>> ListAsync(Guid userId, DateTime? from, DateTime? to, string? search, int page, int pageSize, CancellationToken cancellationToken = default)
     {
-        var query = _context.Transactions.Where(x => x.UserId == userId);
+        var query = ApplyFilters(_context.Transactions.AsNoTracking().Where(x => x.UserId == userId), from, to, search);
 
-        if (from.HasValue) query = query.Where(x => x.TransactionDate >= from.Value.Date);
-        if (to.HasValue) query = query.Where(x => x.TransactionDate < to.Value.Date.AddDays(1));
-        if (!string.IsNullOrWhiteSpace(search)) query = query.Where(x => x.Description.ToLower().Contains(search.ToLower()));
+        var skip = Math.Max(0, (page - 1) * pageSize);
+        var take = Math.Clamp(pageSize, 1, 100);
 
         return await query
             .OrderByDescending(x => x.TransactionDate)
-            .Take(300)
+            .ThenByDescending(x => x.CreatedAt)
+            .Skip(skip)
+            .Take(take)
             .Select(x => new TransactionDto(x.Id, x.TransactionDate, x.Description, x.Amount, x.Type, x.AccountId, x.CreditCardId, x.CategoryId, x.IsRecurring))
             .ToListAsync(cancellationToken);
+    }
+
+    public async Task<int> CountAsync(Guid userId, DateTime? from, DateTime? to, string? search, CancellationToken cancellationToken = default)
+    {
+        var query = ApplyFilters(_context.Transactions.AsNoTracking().Where(x => x.UserId == userId), from, to, search);
+        return await query.CountAsync(cancellationToken);
     }
 
     public async Task<TransactionDto?> GetAsync(Guid userId, Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Id == id)
             .Select(x => new TransactionDto(x.Id, x.TransactionDate, x.Description, x.Amount, x.Type, x.AccountId, x.CreditCardId, x.CategoryId, x.IsRecurring))
             .FirstOrDefaultAsync(cancellationToken);
@@ -63,5 +71,18 @@ public class TransactionCrudService : ITransactionCrudService
         _context.Transactions.Remove(transaction);
         await _context.SaveChangesAsync(cancellationToken);
         return true;
+    }
+
+    private static IQueryable<Transaction> ApplyFilters(IQueryable<Transaction> query, DateTime? from, DateTime? to, string? search)
+    {
+        if (from.HasValue) query = query.Where(x => x.TransactionDate >= from.Value.Date);
+        if (to.HasValue) query = query.Where(x => x.TransactionDate < to.Value.Date.AddDays(1));
+        if (!string.IsNullOrWhiteSpace(search))
+        {
+            var term = search.Trim().ToLower();
+            query = query.Where(x => x.Description.ToLower().Contains(term));
+        }
+
+        return query;
     }
 }

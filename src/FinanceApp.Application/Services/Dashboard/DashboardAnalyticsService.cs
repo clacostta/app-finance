@@ -23,7 +23,7 @@ public class DashboardAnalyticsService : IDashboardAnalyticsService
         var prevStart = monthStart.AddMonths(-1);
         var prevEnd = monthStart;
 
-        var tx = _context.Transactions.Where(x => x.UserId == userId);
+        var tx = _context.Transactions.AsNoTracking().Where(x => x.UserId == userId);
 
         var summary = await BuildSummary(tx, monthStart, monthEnd, cancellationToken);
         var prevSummary = await BuildSummary(tx, prevStart, prevEnd, cancellationToken);

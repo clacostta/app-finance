@@ -15,6 +15,7 @@ public class CreditCardCrudService : ICreditCardCrudService
     public async Task<IReadOnlyCollection<CreditCardDto>> ListAsync(Guid userId, CancellationToken cancellationToken = default)
     {
         return await _context.CreditCards
+            .AsNoTracking()
             .Where(x => x.UserId == userId)
             .Include(x => x.FinancialInstitution)
             .OrderBy(x => x.Name)
@@ -25,6 +26,7 @@ public class CreditCardCrudService : ICreditCardCrudService
     public async Task<CreditCardDto?> GetAsync(Guid userId, Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.CreditCards
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Id == id)
             .Include(x => x.FinancialInstitution)
             .Select(x => new CreditCardDto(x.Id, x.Name, x.LimitAmount, x.ClosingDay, x.DueDay, x.IsActive, x.FinancialInstitutionId, x.FinancialInstitution.Name))

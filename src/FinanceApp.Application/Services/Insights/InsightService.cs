@@ -23,10 +23,12 @@ public class InsightService : IInsightService
         var prevEnd = monthStart;
 
         var thisMonthExpense = await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Type == TransactionType.Expense && x.TransactionDate >= monthStart && x.TransactionDate < monthEnd)
             .SumAsync(x => (decimal?)x.Amount, cancellationToken) ?? 0;
 
         var prevMonthExpense = await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Type == TransactionType.Expense && x.TransactionDate >= prevStart && x.TransactionDate < prevEnd)
             .SumAsync(x => (decimal?)x.Amount, cancellationToken) ?? 0;
 
@@ -45,6 +47,7 @@ public class InsightService : IInsightService
         }
 
         var topOutlier = await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.Type == TransactionType.Expense && x.TransactionDate >= monthStart && x.TransactionDate < monthEnd)
             .OrderByDescending(x => x.Amount)
             .Select(x => new { x.Description, x.Amount })
@@ -59,6 +62,7 @@ public class InsightService : IInsightService
         }
 
         var recurringCandidates = await _context.Transactions
+            .AsNoTracking()
             .Where(x => x.UserId == userId && x.IsSubscriptionCandidate)
             .CountAsync(cancellationToken);
 
