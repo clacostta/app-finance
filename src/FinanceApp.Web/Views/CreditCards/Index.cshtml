@@ -1,0 +1,8 @@
+@model IReadOnlyCollection<FinanceApp.Application.DTOs.CreditCards.CreditCardDto>
+@{ ViewData["Title"] = "Cartões"; }
+<div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h4">Cartões de crédito</h1><a asp-action="Create" class="btn btn-primary">Novo cartão</a></div>
+<div class="card"><div class="card-body"><table class="table table-striped"><thead><tr><th>Nome</th><th>Instituição</th><th class="text-end">Limite</th><th>Fech.</th><th>Venc.</th><th></th></tr></thead><tbody>
+@foreach (var i in Model){
+<tr><td>@i.Name</td><td>@i.FinancialInstitutionName</td><td class="text-end">@i.LimitAmount.ToString("C")</td><td>@i.ClosingDay</td><td>@i.DueDay</td><td class="text-end"><a asp-action="Edit" asp-route-id="@i.Id" class="btn btn-sm btn-outline-primary">Editar</a><form asp-action="Delete" asp-route-id="@i.Id" method="post" class="d-inline">@Html.AntiForgeryToken()<button class="btn btn-sm btn-outline-danger">Excluir</button></form></td></tr>
+}
+</tbody></table></div></div>

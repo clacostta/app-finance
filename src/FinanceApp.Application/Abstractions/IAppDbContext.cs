@@ -6,6 +6,7 @@ namespace FinanceApp.Application.Abstractions;
 public interface IAppDbContext
 {
     DbSet<User> Users { get; }
+    DbSet<FinancialInstitution> FinancialInstitutions { get; }
     DbSet<Account> Accounts { get; }
     DbSet<CreditCard> CreditCards { get; }
     DbSet<Transaction> Transactions { get; }

@@ -26,4 +26,15 @@ public class CreditCard : BaseEntity
         ClosingDay = closingDay;
         DueDay = dueDay;
     }
+
+    public void Update(string name, decimal limitAmount, int closingDay, int dueDay, bool isActive, Guid institutionId)
+    {
+        Name = name;
+        LimitAmount = limitAmount;
+        ClosingDay = closingDay;
+        DueDay = dueDay;
+        IsActive = isActive;
+        FinancialInstitutionId = institutionId;
+        Touch();
+    }
 }

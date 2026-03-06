@@ -36,6 +36,22 @@ public class Transaction : BaseEntity
         TransactionDate = transactionDate;
     }
 
+    public void UpdateManual(TransactionType type, string description, decimal amount, DateTime transactionDate, Guid? accountId, Guid? creditCardId, Guid? categoryId, string? notes, bool isRecurring)
+    {
+        Type = type;
+        Description = description;
+        Amount = amount;
+        TransactionDate = transactionDate;
+        AccountId = accountId;
+        CreditCardId = creditCardId;
+        CategoryId = categoryId;
+        Notes = notes;
+        IsRecurring = isRecurring;
+        Source = "Manual";
+        IsSubscriptionCandidate = DetectSubscriptionCandidate(description);
+        Touch();
+    }
+
     public void SetImportMetadata(Guid? accountId, Guid? creditCardId, DateTime? postedDate, string? externalId, Guid importBatchId, string source)
     {
         AccountId = accountId;

@@ -18,4 +18,10 @@ public class TransactionCategory : BaseEntity
         Name = name;
         IsSystemDefault = isSystemDefault;
     }
+
+    public void Rename(string name)
+    {
+        Name = name;
+        Touch();
+    }
 }

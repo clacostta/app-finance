@@ -22,6 +22,13 @@ Sistema web de controle financeiro pessoal/familiar com arquitetura em camadas (
 - Persistência de lote (`ImportBatch`) e metadados de arquivo (`ImportedFile`)
 - Histórico de importações com status e métricas
 
+### Fase 3
+- CRUD de contas bancárias
+- CRUD de cartões de crédito
+- CRUD de categorias personalizadas (mantendo categorias padrão de sistema)
+- CRUD de lançamentos com filtros por período e busca textual
+- Seeds iniciais de categorias padrão
+
 ## Arquitetura
 
 ```text
@@ -76,10 +83,6 @@ dotnet run --project src/FinanceApp.Web
 - Senha: `Admin@1234`
 
 ## Próximas fases
-
-### Fase 3
-- CRUD completo de lançamentos, categorias, contas e cartões.
-- Regras automáticas de categorização.
 
 ### Fase 4
 - Dashboard com KPIs avançados e gráficos reais.

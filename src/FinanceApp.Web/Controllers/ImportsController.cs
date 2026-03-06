@@ -1,8 +1,6 @@
-using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
 using FinanceApp.Application.Abstractions;
 using FinanceApp.Web.Models.Imports;
+using FinanceApp.Web.Support;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -94,12 +92,7 @@ public class ImportsController : Controller
         return View(history);
     }
 
-    private Guid ResolveUserId()
-    {
-        var sub = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? User.Identity?.Name ?? "anonymous";
-        var hash = SHA256.HashData(Encoding.UTF8.GetBytes(sub));
-        return new Guid(hash.Take(16).ToArray());
-    }
+    private Guid ResolveUserId() => UserIdResolver.Resolve(User);
 
     private async Task<IActionResult> ReturnWithHistory(ImportOfxViewModel model, CancellationToken cancellationToken)
     {

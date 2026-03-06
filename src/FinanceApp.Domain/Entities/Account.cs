@@ -23,4 +23,13 @@ public class Account : BaseEntity
         Name = name;
         InitialBalance = initialBalance;
     }
+
+    public void Update(string name, decimal initialBalance, bool isActive, Guid financialInstitutionId)
+    {
+        Name = name;
+        InitialBalance = initialBalance;
+        IsActive = isActive;
+        FinancialInstitutionId = financialInstitutionId;
+        Touch();
+    }
 }

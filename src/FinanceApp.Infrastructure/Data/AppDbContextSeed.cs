@@ -15,6 +15,19 @@ public static class AppDbContextSeed
                 new FinancialInstitution("Nubank", "260"));
         }
 
+        if (!await context.TransactionCategories.AnyAsync(x => x.IsSystemDefault))
+        {
+            var systemUserId = Guid.Empty;
+            context.TransactionCategories.AddRange(
+                new TransactionCategory(systemUserId, "Alimentação", true),
+                new TransactionCategory(systemUserId, "Moradia", true),
+                new TransactionCategory(systemUserId, "Transporte", true),
+                new TransactionCategory(systemUserId, "Lazer", true),
+                new TransactionCategory(systemUserId, "Saúde", true),
+                new TransactionCategory(systemUserId, "Educação", true),
+                new TransactionCategory(systemUserId, "Salário", true));
+        }
+
         await context.SaveChangesAsync();
     }
 }

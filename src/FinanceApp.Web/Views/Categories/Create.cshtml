@@ -1,0 +1,4 @@
+@model FinanceApp.Web.Models.Categories.CategoryFormViewModel
+@{ ViewData["Title"] = "Nova categoria"; }
+<h1 class="h4 mb-3">Nova categoria</h1>
+<form method="post" class="card card-body">@Html.AntiForgeryToken()<div asp-validation-summary="ModelOnly" class="text-danger"></div><div class="mb-2"><label asp-for="Name" class="form-label"></label><input asp-for="Name" class="form-control" /></div><button class="btn btn-primary" type="submit">Salvar</button></form>

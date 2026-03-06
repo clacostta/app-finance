@@ -1,0 +1,8 @@
+@model IReadOnlyCollection<FinanceApp.Application.DTOs.Categories.CategoryDto>
+@{ ViewData["Title"] = "Categorias"; }
+<div class="d-flex justify-content-between align-items-center mb-3"><h1 class="h4">Categorias</h1><a asp-action="Create" class="btn btn-primary">Nova categoria</a></div>
+<div class="card"><div class="card-body"><table class="table table-striped"><thead><tr><th>Nome</th><th>Origem</th><th></th></tr></thead><tbody>
+@foreach (var i in Model){
+<tr><td>@i.Name</td><td>@(i.IsSystemDefault?"Sistema":"Personalizada")</td><td class="text-end">@if(!i.IsSystemDefault){<a asp-action="Edit" asp-route-id="@i.Id" class="btn btn-sm btn-outline-primary">Editar</a><form asp-action="Delete" asp-route-id="@i.Id" method="post" class="d-inline">@Html.AntiForgeryToken()<button class="btn btn-sm btn-outline-danger">Excluir</button></form>}</td></tr>
+}
+</tbody></table></div></div>
