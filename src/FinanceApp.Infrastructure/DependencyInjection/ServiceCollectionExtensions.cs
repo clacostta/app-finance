@@ -4,6 +4,9 @@ using FinanceApp.Application.Services;
 using FinanceApp.Application.Services.Accounts;
 using FinanceApp.Application.Services.Categories;
 using FinanceApp.Application.Services.CreditCards;
+using FinanceApp.Application.Services.Dashboard;
+using FinanceApp.Application.Services.Insights;
+using FinanceApp.Application.Services.Reports;
 using FinanceApp.Application.Services.Transactions;
 using FinanceApp.Infrastructure.Data;
 using FinanceApp.Infrastructure.Identity;
@@ -37,6 +40,9 @@ public static class ServiceCollectionExtensions
 
         services.AddScoped<IAppDbContext>(sp => sp.GetRequiredService<AppDbContext>());
         services.AddScoped<DashboardService>();
+        services.AddScoped<IDashboardAnalyticsService, DashboardAnalyticsService>();
+        services.AddScoped<IReportService, ReportService>();
+        services.AddScoped<IInsightService, InsightService>();
         services.AddScoped<IOfxImportService, OfxImportService>();
         services.AddScoped<IOfxParser, OfxParser>();
         services.AddScoped<IAccountCrudService, AccountCrudService>();
