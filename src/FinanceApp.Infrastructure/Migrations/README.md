@@ -1,6 +1,10 @@
 # Migrations
 
-Este diretório contém a migration inicial da Fase 1.
+Este diretório contém uma migration inicial placeholder para manter o scaffold da solução.
+
+## Atenção
+
+A migration `202609010001_InitialCreate` não cria tabelas de domínio; ela existe apenas como placeholder.
 
 ## Gerar migration real
 
@@ -27,7 +31,9 @@ Configure no `appsettings.json`:
 }
 ```
 
-Depois execute o mesmo comando de update:
+Com o provider SQLite, o startup da aplicação chama `EnsureCreated` automaticamente para criar o schema local enquanto você ainda não gerou uma migration real.
+
+Se você já tiver gerado migration real, pode aplicar normalmente com:
 
 ```bash
 dotnet ef database update -p src/FinanceApp.Infrastructure -s src/FinanceApp.Web

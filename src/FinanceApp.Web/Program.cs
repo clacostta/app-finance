@@ -5,6 +5,7 @@ using FinanceApp.Infrastructure.Identity;
 using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -76,6 +77,16 @@ app.MapControllerRoute(
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+    if (db.Database.IsSqlite())
+    {
+        await db.Database.EnsureCreatedAsync();
+    }
+    else
+    {
+        await db.Database.MigrateAsync();
+    }
+
     await AppDbContextSeed.SeedAsync(db);
 
     var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppIdentityUser>>();

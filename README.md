@@ -94,7 +94,7 @@ Exemplo SQLite:
 ### Passos
 
 1. Ajuste `src/FinanceApp.Web/appsettings.json`.
-2. Gere migração real:
+2. Gere migração real (recomendado para produção e para bancos relacionais completos):
 
 ```bash
 dotnet ef migrations add InitialCreate -p src/FinanceApp.Infrastructure -s src/FinanceApp.Web -o Migrations
@@ -105,6 +105,8 @@ dotnet ef migrations add InitialCreate -p src/FinanceApp.Infrastructure -s src/F
 ```bash
 dotnet ef database update -p src/FinanceApp.Infrastructure -s src/FinanceApp.Web
 ```
+
+> Observação importante: a migration versionada no repositório é um placeholder. Para ambiente local com SQLite, a aplicação garante criação automática do schema no startup (`EnsureCreated`) quando `DatabaseProvider=Sqlite`, evitando banco vazio durante o desenvolvimento inicial.
 
 4. Execute:
 
