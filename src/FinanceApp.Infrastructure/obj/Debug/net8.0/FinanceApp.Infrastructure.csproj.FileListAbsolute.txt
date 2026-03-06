@@ -1,0 +1,6 @@
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Infrastructure\obj\Debug\net8.0\FinanceApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Infrastructure\obj\Debug\net8.0\FinanceApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Infrastructure\obj\Debug\net8.0\FinanceApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Infrastructure\obj\Debug\net8.0\FinanceApp.Infrastructure.AssemblyInfo.cs
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Infrastructure\obj\Debug\net8.0\FinanceApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Infrastructure\obj\Debug\net8.0\FinanceApp.Infrastructure.sourcelink.json

@@ -1,0 +1,12 @@
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\bin\Debug\net8.0\FinanceApp.Domain.deps.json
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\bin\Debug\net8.0\FinanceApp.Domain.dll
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\bin\Debug\net8.0\FinanceApp.Domain.pdb
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\FinanceApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\FinanceApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\FinanceApp.Domain.AssemblyInfo.cs
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\FinanceApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\FinanceApp.Domain.sourcelink.json
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\FinanceApp.Domain.dll
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\refint\FinanceApp.Domain.dll
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\FinanceApp.Domain.pdb
+C:\Users\Claudio\source\repos\clacostta\app-finance\src\FinanceApp.Domain\obj\Debug\net8.0\ref\FinanceApp.Domain.dll
