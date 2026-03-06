@@ -34,6 +34,12 @@ Sistema web de controle financeiro pessoal/familiar com arquitetura em camadas (
 - Área de insights automáticos (variação mensal, gasto anômalo e recorrências)
 - Relatórios com filtros por período e visões de gastos/receitas/top despesas
 
+### Fase 5
+- Orçamentos mensais por categoria com cálculo de realizado x planejado
+- Metas financeiras com acompanhamento de progresso
+- Painel de assinaturas detectadas com projeção anual
+- Central de notificações e geração de alertas de orçamento excedido
+
 ## Arquitetura
 
 ```text
@@ -88,9 +94,6 @@ dotnet run --project src/FinanceApp.Web
 - Senha: `Admin@1234`
 
 ## Próximas fases
-
-### Fase 5
-- Orçamentos, metas, assinaturas e alertas.
 
 ### Fase 6
 - Testes avançados, hardening de segurança e otimizações.

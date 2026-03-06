@@ -1,0 +1,7 @@
+@model FinanceApp.Web.Models.Budgets.BudgetFormViewModel
+@{ ViewData["Title"] = "Novo orçamento"; var categories = (IEnumerable<dynamic>)ViewBag.Categories; }
+<h1 class="h4 mb-3">Novo orçamento</h1>
+<form method="post" class="card card-body">@Html.AntiForgeryToken()<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<div class="mb-2"><label asp-for="CategoryId" class="form-label">Categoria</label><select asp-for="CategoryId" class="form-select">@foreach(var c in categories){<option value="@c.Id">@c.Name</option>}</select></div>
+<div class="row g-2"><div class="col"><label asp-for="Month" class="form-label"></label><input asp-for="Month" class="form-control"/></div><div class="col"><label asp-for="Year" class="form-label"></label><input asp-for="Year" class="form-control"/></div><div class="col"><label asp-for="PlannedAmount" class="form-label"></label><input asp-for="PlannedAmount" class="form-control"/></div></div>
+<button class="btn btn-primary mt-3">Salvar</button></form>

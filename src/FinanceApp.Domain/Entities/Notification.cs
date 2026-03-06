@@ -17,4 +17,10 @@ public class Notification : BaseEntity
         Title = title;
         Message = message;
     }
+
+    public void MarkAsRead()
+    {
+        IsRead = true;
+        Touch();
+    }
 }

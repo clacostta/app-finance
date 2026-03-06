@@ -18,4 +18,13 @@ public class Goal : BaseEntity
         Name = name;
         TargetAmount = targetAmount;
     }
+
+    public void Update(string name, decimal targetAmount, decimal currentAmount, DateTime? targetDate)
+    {
+        Name = name;
+        TargetAmount = targetAmount;
+        CurrentAmount = currentAmount;
+        TargetDate = targetDate;
+        Touch();
+    }
 }

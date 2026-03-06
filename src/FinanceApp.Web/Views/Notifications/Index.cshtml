@@ -1,0 +1,12 @@
+@model IReadOnlyCollection<FinanceApp.Application.DTOs.Notifications.NotificationDto>
+@{ ViewData["Title"] = "Notificações"; }
+<h1 class="h4 mb-3">Central de notificações</h1>
+<div class="list-group">
+@foreach(var n in Model){
+<div class="list-group-item">
+<div class="d-flex justify-content-between"><strong>@n.Title</strong><small>@n.CreatedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</small></div>
+<p class="mb-2">@n.Message</p>
+@if(!n.IsRead){<form asp-action="MarkAsRead" method="post">@Html.AntiForgeryToken()<input type="hidden" name="id" value="@n.Id"/><button class="btn btn-sm btn-outline-primary">Marcar como lida</button></form>}
+</div>
+}
+</div>

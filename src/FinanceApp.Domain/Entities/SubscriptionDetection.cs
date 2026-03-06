@@ -19,4 +19,10 @@ public class SubscriptionDetection : BaseEntity
         AverageAmount = averageAmount;
         OccurrenceCount = occurrenceCount;
     }
+
+    public void Deactivate()
+    {
+        IsActive = false;
+        Touch();
+    }
 }

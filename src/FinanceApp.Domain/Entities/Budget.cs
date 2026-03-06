@@ -20,4 +20,13 @@ public class Budget : BaseEntity
         Month = month;
         PlannedAmount = plannedAmount;
     }
+
+    public void Update(Guid categoryId, int year, int month, decimal plannedAmount)
+    {
+        CategoryId = categoryId;
+        Year = year;
+        Month = month;
+        PlannedAmount = plannedAmount;
+        Touch();
+    }
 }

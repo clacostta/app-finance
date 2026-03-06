@@ -4,6 +4,10 @@ using FinanceApp.Application.Services;
 using FinanceApp.Application.Services.Accounts;
 using FinanceApp.Application.Services.Categories;
 using FinanceApp.Application.Services.CreditCards;
+using FinanceApp.Application.Services.Budgets;
+using FinanceApp.Application.Services.Goals;
+using FinanceApp.Application.Services.Notifications;
+using FinanceApp.Application.Services.Subscriptions;
 using FinanceApp.Application.Services.Dashboard;
 using FinanceApp.Application.Services.Insights;
 using FinanceApp.Application.Services.Reports;
@@ -49,6 +53,10 @@ public static class ServiceCollectionExtensions
         services.AddScoped<ICreditCardCrudService, CreditCardCrudService>();
         services.AddScoped<ICategoryCrudService, CategoryCrudService>();
         services.AddScoped<ITransactionCrudService, TransactionCrudService>();
+        services.AddScoped<IBudgetService, BudgetService>();
+        services.AddScoped<IGoalService, GoalService>();
+        services.AddScoped<ISubscriptionService, SubscriptionService>();
+        services.AddScoped<INotificationService, NotificationService>();
 
         services.AddIdentity<AppIdentityUser, IdentityRole>(options =>
             {

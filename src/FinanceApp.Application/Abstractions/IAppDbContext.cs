@@ -11,6 +11,10 @@ public interface IAppDbContext
     DbSet<CreditCard> CreditCards { get; }
     DbSet<Transaction> Transactions { get; }
     DbSet<TransactionCategory> TransactionCategories { get; }
+    DbSet<Budget> Budgets { get; }
+    DbSet<Goal> Goals { get; }
+    DbSet<Notification> Notifications { get; }
+    DbSet<SubscriptionDetection> SubscriptionDetections { get; }
     DbSet<ImportBatch> ImportBatches { get; }
     DbSet<ImportedFile> ImportedFiles { get; }
     Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
